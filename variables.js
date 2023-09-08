@@ -28,5 +28,5 @@ contador = "Ahora soy string";
 console.log(contador);
 
 let verdad = true;
-consolele.log(typeof(verdad));
-consolele.log(typeof(contador));
+console.log(typeof(verdad));
+console.log(typeof(contador));
