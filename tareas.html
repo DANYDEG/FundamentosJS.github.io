@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tareas con JS</title>
+</head>
+<style>
+    *{
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        margin: 0;
+    }
+    body{
+        background: linear-gradient(to bottom, #7c36b2, #000000);
+        min-height: 100vh;
+
+    }
+
+    h1{
+        color: aliceblue;
+        background: rgb(0,0,0,0.8);
+        height: auto;
+        width: 97.4%;
+        text-align: center;
+        padding: 20px;
+
+    }
+    .container{
+        width: 600px;
+        min-height: 400px;
+        padding: 10px;
+        margin-left: 30%;
+        margin-top: 5%;
+        background: linear-gradient(to right bottom, rgb(255,255,255,0.8),rgb(255,255,255,0.4) );
+        border-radius: 10px;
+
+    }
+
+    textarea{
+        font-size: large;
+        max-width: 95%;
+        min-width: 95%;
+        height: 40px;
+        min-height: 50px;
+        border-radius: 10px;
+        padding: 10px;
+        background: linear-gradient(to right bottom, rgb(255,255,255,0.6),rgb(255,255,255,0.2) );
+        border-style: none;
+        text-align: center;
+        outline: 0;
+
+    }
+    button{
+        margin-top: 20px;
+        width: 120px;
+        height: 30px;
+        border-style: none;
+        background: none;
+        transition: 0.3s;
+        border-radius: 8px;
+        
+    }
+
+    button:hover{
+        background: #7c36b2;
+        transition: 0.3s;
+        color: aliceblue;
+        border-style: none;
+    }
+
+    #tareas{
+
+        min-height: 230px;
+        margin-top: 30px;
+        border-radius: 10px;
+    }
+
+    #formulario{
+        text-align: center;
+    }
+
+    ul{
+        line-height: 3;
+        list-style: none;
+        text-align: left;
+        border-radius: 10px;
+        background: linear-gradient(to right bottom, rgb(255,255,255,0.4),rgb(255,255,255,0.2) );
+        transition: 0.3s;
+    }
+
+
+
+</style>
+
+<body>
+    <h1>Lista de Tareas</h1>
+
+    <div class="container">
+        <div id="formulario">
+            <textarea name="" id="inputTarea" cols="30" rows="10"></textarea>
+            <button onclick="addTarea()">Agregar Tarea</button>
+        </div>
+
+
+        <div id="tareas">
+            <ul>
+
+            </ul>
+        </div>
+    </div>
+    <script src="./tareas.js"></script>
+
+</body>
+</html>
